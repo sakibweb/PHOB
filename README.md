@@ -196,7 +196,7 @@ $config = [
     'expiry' => '31/12/2025'        // Optional
 ];
 $skip_list = ['other_script.php']; // Optional
-if (phob_build('script.php', 'protected_script.phob', $config, $skip_list)) {
+if (phob_build('script.php', 'protected_script.phob', $skip_list, $config)) {
     echo "File protected successfully!\n";
 } else {
     echo "Failed to protect file.\n";
